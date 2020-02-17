@@ -1,0 +1,53 @@
+{
+    "name": "passwordDepot",
+    "version": "12.0",
+    "manifest_version": 2,
+    "description": "passwordDepot",
+    "homepage_url": "https://www.password-depot.de",
+    "default_locale" : "en",
+    "applications": {
+       "gecko": {
+         "id": "<%= gecko_id %>"
+       }
+    },
+    "icons": {
+        "128": "icons/128.png",
+        "48": "icons/48.png",
+        "16": "icons/16.png"
+    },
+    "background": {
+        "scripts": [
+                    "vendor/jquery.js",
+                    "vendor/uri.js",
+                  "js/background/pdBackgroundScript.js"]
+        ,"persistent": true
+    },
+    "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "vendor/underscore.js","vendor/jquery.js","js/content/pdContentScript.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+    "options_ui": {
+      "chrome_style": true,
+      "page": "dialogs/options.html"
+    },
+    "browser_action": {
+        "default_icon": "icons/48.png",
+        "default_title": "Password Depot"
+    },
+    "permissions": [
+        "tabs",
+        "management",
+        "nativeMessaging",
+        "cookies",
+        "storage"
+    ],
+    "web_accessible_resources": [
+        "dialogs/*",
+        "icons/48.png",
+        "icons/16.png"
+    ],
+
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+}

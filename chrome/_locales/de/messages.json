@@ -1,0 +1,23 @@
+{
+   "pd_not_running": {
+      "message": "Password Depot wird nicht ausgeführt."
+   },
+   "pd_locked": {
+      "message": "Password Depot ist gesperrt."
+   },
+   "pd_please_start": {
+      "message": "Starten Sie bitte Password Depot."
+   },
+   "pd_please_unlock": {
+      "message": "Password Depot entsperren"
+   },
+   "pd_download_url": {
+      "message": "Sie können die neueste Version von Password Depot von <a href='https://www.password-depot.com/download.htm' target='_blank'> hier </a> herunterladen."
+   },
+   "pd_title": {
+      "message": "Password Depot"
+   },
+   "pd_description": {
+      "message": "Interface zur Password Depot Anwendung."
+   }
+}

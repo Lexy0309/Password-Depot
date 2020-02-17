@@ -1,0 +1,23 @@
+{
+   "pd_not_running": {
+      "message": "Password Depot is not running."
+   },
+   "pd_locked": {
+      "message": "Password Depot is locked."
+   },
+   "pd_please_start": {
+      "message": "Please start Password Depot."
+   },
+   "pd_please_unlock": {
+      "message": "Unlock Password Depot"
+   },
+   "pd_download_url": {
+      "message": "You can download the latest version of Password Depot from <a href='https://www.password-depot.com/download.htm' target='_blank'>here</a>."
+   },
+   "pd_title": {
+      "message": "Password Depot Extension"
+   },
+   "pd_description": {
+      "message": "Interface to the Password Depot application."
+   }
+}
